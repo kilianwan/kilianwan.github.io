@@ -22,10 +22,14 @@
       gap: 2em;
     }
 
-    nav a {
-      color: #88c9f2;
+    .nav-link {
+      color: white;
       text-decoration: none;
       font-weight: 500;
+    }
+
+    .nav-link.active {
+      color: #88c9f2;
     }
 
     .container {
@@ -77,9 +81,9 @@
 </head>
 <body>
   <nav>
-      <a href="index.html">About</a>
-      <a href="project.html">Projects</a>
-      <a href="cv.html">CV</a>
+    <a href="index.html" class="nav-link" id="nav-about">About</a>
+    <a href="project.html" class="nav-link" id="nav-projects">Projects</a>
+    <a href="cv.html" class="nav-link" id="nav-cv">CV</a>
   </nav>
 
   <div class="container" id="about">
@@ -107,6 +111,9 @@
       <img src="photo_github.jpg" alt="Kilian Wan photo">
     </div>
   </div>
-  </div>
+
+  <script>
+    document.getElementById("nav-about").classList.add("active");
+  </script>
 </body>
 </html>
