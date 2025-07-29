@@ -31,9 +31,13 @@
 
     .nav-right a {
       margin-left: 2em;
-      color: #88c9f2;
+      color: white;
       text-decoration: none;
       font-weight: 500;
+    }
+
+    .nav-right a.active {
+      color: #88c9f2;
     }
 
     .project-container {
@@ -106,9 +110,9 @@
       <a href="index.html">Kilian Wan</a>
     </div>
     <div class="nav-right">
-      <a href="index.html">About</a>
-      <a href="project.html">Projects</a>
-      <a href="cv.html">CV</a>
+      <a href="index.html" id="nav-about">About</a>
+      <a href="project.html" id="nav-projects">Projects</a>
+      <a href="cv.html" id="nav-cv">CV</a>
     </div>
   </nav>
 
@@ -147,7 +151,10 @@
         <i class="fa-solid fa-tag"></i><span class="tag">epfl</span>
       </div>
     </div>
-
   </div>
+
+  <script>
+    document.getElementById("nav-projects").classList.add("active");
+  </script>
 </body>
 </html>
