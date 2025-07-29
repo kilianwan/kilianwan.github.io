@@ -22,78 +22,77 @@
       align-items: center;
     }
 
-    nav a {
+    nav .nav-left a {
+      color: #f1f1f1;
+      font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    nav .nav-right {
+      display: flex;
+      gap: 2em;
+    }
+
+    nav .nav-right a {
       color: #88c9f2;
       text-decoration: none;
       font-weight: 500;
-      margin-left: 2em;
     }
 
-    .projects-content {
+    .projects {
       max-width: 800px;
       margin: 3em auto;
       padding: 0 2em;
     }
 
-    h1, h2, h3 {
+    .project {
+      margin-bottom: 3em;
+      border-bottom: 1px solid #444;
+      padding-bottom: 1.5em;
+    }
+
+    .project h2 {
       color: #88c9f2;
+      margin-bottom: 0.3em;
     }
 
-    p, li {
-      line-height: 1.6;
+    .project-links {
+      margin-top: 0.5em;
     }
 
-    ul {
-      padding-left: 1.2em;
-    }
-
-    a {
+    .project-links a {
       color: #88c9f2;
+      margin-right: 1.5em;
       text-decoration: none;
     }
 
-    a:hover {
+    .project-links a:hover {
       text-decoration: underline;
-    }
-
-    .project-entry {
-      margin-bottom: 3em;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background-color: #444;
-      margin: 2em 0;
     }
   </style>
 </head>
 <body>
   <nav>
-    <div><strong>Kilian Wan</strong></div>
-    <div>
-      <a href="index.html">About</a>
+    <div class="nav-left">
+      <a href="index.html">Kilian Wan</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html#about">About</a>
       <a href="project.html">Projects</a>
       <a href="cv.html">CV</a>
     </div>
   </nav>
 
-  <div class="projects-content">
-    <h1>Projects</h1>
-    <hr>
-
-    <div class="project-entry">
-      <h3>Rates of Convergence for Projection Estimators – Focus on B-splines</h3>
-      <p>
-        My Bachelor's thesis in Mathematics at EPFL explored the theoretical behavior of projection estimators, with a particular focus on the approximation properties of B-splines in nonparametric statistics.
-      </p>
-      <p>
-        <strong>GitHub:</strong> 
-        <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines/tree/main" target="_blank">View Repository</a><br>
-        <strong>PDF:</strong> 
+  <div class="projects">
+    <div class="project">
+      <h2>Bachelor Project: Rates of convergence for projection estimators (B-splines)</h2>
+      <div class="project-links">
+        <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines" target="_blank" rel="noopener noreferrer">View Repository</a>
         <a href="https://kilianwan.github.io/Project/bachelorproject.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
-      </p>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
