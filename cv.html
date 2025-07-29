@@ -4,64 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV – Kilian Wan</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
     body {
       background-color: #1e1e1e;
       color: #f1f1f1;
       font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: flex-end;
+      gap: 2em;
+    }
+
+    nav a {
+      color: #88c9f2;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .cv-content {
       max-width: 800px;
       margin: 3em auto;
       padding: 0 2em;
     }
+
+    h1, h2, h3 {
+      color: #88c9f2;
+    }
+
+    p, li {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
     a {
       color: #88c9f2;
       text-decoration: none;
     }
-    h1, h2, h3 {
-      color: #88c9f2;
-    }
-    ul {
-      line-height: 1.6;
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Curriculum Vitae</h1>
-  <p><a href="index.html">← Back to homepage</a></p>
+  <nav>
+    <a href="index.html#about">About</a>
+    <a href="index.html#research">Research</a>
+    <a href="cv.html">CV</a>
+  </nav>
 
-  <h2>Education</h2>
-  <p><strong>M.Sc. in Financial Engineering</strong>, EPFL (2024–present)</p>
-  <ul>
-    <li>Main coursework: Finance, Stochastic Calculus, Big Data and Machine Learning for Finance (PhD level), Applied Data Analysis, Deep Learning, Derivatives, Investments</li>
-  </ul>
-  
-  <p><strong>B.Sc. in Mathematics</strong>, EPFL (2021–2024)<br>
-  Thesis: <em>Rates of convergence for projection estimators & B-splines</em> (Supervisor: <a href="https://people.epfl.ch/victor.panaretos" target="_blank">Victor Panaretos</a>)</p>
-  <ul>
-    <li>Main coursework: Time Series, Linear Models, Stochastic Processes, Martingales and Brownian Motions, Statistics, Probability, Functional Analysis, Continuous Optimisation, Discrete Optimisation, Advanced Numerical Analysis</li>
-  </ul>
-  
-  <h2>Research Experience</h2>
-  <p><strong>Research Assistant</strong>, EPFL — Summer 2025<br>
-  Transformer-based models for financial time-series forecasting.<br>
-  Supervised by Prof. Semyon Malamud & Johannes Schwab.</p>
+  <div class="cv-content">
+    <h1>Curriculum Vitae</h1>
 
-  <h2>Teaching</h2>
-  <ul>
-    <li>Analyse I, Analyse A/B, Analyse Avancée I – EPFL TA (2023–present)</li>
-  </ul>
+    <h2>Education</h2>
+    <p><strong>M.Sc. in Financial Engineering</strong>, EPFL (2024–present)</p>
+    <ul>
+      <li>Main coursework: Finance, Stochastic Calculus, Big Data and Machine Learning for Finance (PhD level), Applied Data Analysis, Deep Learning, Derivatives, Investments</li>
+    </ul>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Stock Forecasting with Deep Learning</strong>: Combined FinBERT sentiment with structured data.</li>
-    <li><strong>B-splines & Projection Estimators</strong>: Bachelor thesis.</li>
-  </ul>
+    <p><strong>B.Sc. in Mathematics</strong>, EPFL (2021–2024)<br>
+    Thesis: <em>Rates of convergence for projection estimators & B-splines</em> (Supervisor: <a href="https://people.epfl.ch/victor.panaretos" target="_blank">Victor Panaretos</a>)</p>
+    <ul>
+      <li>Main coursework: Time Series, Linear Models, Stochastic Processes, Martingales and Brownian Motions, Statistics, Probability, Functional Analysis, Continuous Optimisation, Discrete Optimisation, Advanced Numerical Analysis</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>
-    kilian.wan@epfl.ch<br>
-    <a href="https://github.com/kilianwan">GitHub</a> | 
-    <a href="https://linkedin.com/in/kilian-wan">LinkedIn</a>
-  </p>
+    <h2>Research Experience</h2>
+    <p><strong>Research Assistant</strong>, EPFL — Summer 2025</p>
+    <ul>
+      <li>Worked on transformer-based models for time-series forecasting in financial data.</li>
+      <li>Integrated deep learning models into a pipeline with rolling-window cross-validation.</li>
+      <li>Supervised by Prof. Semyon Malamud & PhD candidate Johannes Schwab.</li>
+    </ul>
+
+    <h2>Teaching Experience</h2>
+    <ul>
+      <li><strong>EPFL Teaching Assistant</strong> (2023–present): Analyse I, Analyse A, Analyse B, Analyse Avancée I</li>
+    </ul>
+
+    <h2>Selected Projects</h2>
+    <ul>
+      <li><strong>Stock Return Forecasting with Deep Learning</strong>: Combined FinBERT sentiment analysis with structured financial data in PyTorch.</li>
+      <li><strong>B-splines & Projection Estimators</strong>: Bachelor thesis on nonparametric convergence rates.</li>
+    </ul>
+
+    <h2>Download</h2>
+    <p>👉 You can download the full PDF version of my CV <a href="KW_CV_2025.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+  </div>
 </body>
 </html>
