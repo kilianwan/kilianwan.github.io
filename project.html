@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects – Kilian Wan</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #1e1e1e;
       color: #f1f1f1;
-      font-family: 'Roboto Mono', monospace;
+      font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
     }
@@ -24,10 +23,10 @@
     }
 
     .nav-left a {
-      font-size: 1.2em;
-      color: #fff;
-      text-decoration: none;
+      color: white;
       font-weight: bold;
+      font-size: 1.2em;
+      text-decoration: none;
     }
 
     .nav-right a {
@@ -37,63 +36,54 @@
       font-weight: 500;
     }
 
-    .title-section {
-      text-align: center;
-      margin-top: 3em;
-    }
-
-    .title-section h1 {
-      font-size: 2.2em;
-      margin: 0.2em 0;
-    }
-
-    .title-section p {
-      font-size: 1.1em;
-      color: #ccc;
-      margin-bottom: 2em;
-    }
-
-    .project-section {
+    .project-container {
       max-width: 900px;
-      margin: 0 auto;
-      padding: 0 2em 4em;
+      margin: 4em auto 2em auto;
+      padding: 0 2em;
+    }
+
+    .project-container h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
     }
 
     .project {
-      margin-bottom: 3em;
-    }
-
-    .project h2 {
-      font-size: 1.5em;
-      color: #f1f1f1;
-    }
-
-    .project-links {
-      margin-top: 0.5em;
-      font-size: 0.95em;
-    }
-
-    .project-links a {
-      color: #88c9f2;
-      margin-right: 1.5em;
-      text-decoration: none;
-    }
-
-    .project-links a:hover {
-      text-decoration: underline;
+      margin-top: 2em;
     }
 
     hr {
       border: 0;
       height: 1px;
       background-color: #444;
-      margin: 2em 0;
+      margin: 2em 0 1.5em;
     }
 
-    .tagline {
-      text-align: center;
+    .project-title {
+      font-size: 1.4em;
+      margin-bottom: 0.3em;
+    }
+
+    .project-links {
       font-size: 0.95em;
-      color: #ccc;
+      margin-left: 1em;
+    }
+
+    .project-links a {
+      color: #88c9f2;
+      text-decoration: none;
+      margin-right: 1.5em;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 4em;
+      color: #aaa;
+      font-size: 0.95em;
     }
   </style>
 </head>
@@ -103,32 +93,29 @@
       <a href="index.html">Kilian Wan</a>
     </div>
     <div class="nav-right">
-      <a href="index.html#about">About</a>
+      <a href="index.html">About</a>
+      <a href="#">Research</a>
       <a href="cv.html">CV</a>
       <a href="project.html">Projects</a>
     </div>
   </nav>
 
-  <div class="title-section">
-    <h1>Kilian Wan's Projects</h1>
-    <p>Machine learning theory, applied mathematics, statistics, finance, etc.</p>
-  </div>
+  <div class="project-container">
+    <h1>Projects</h1>
 
-  <div class="project-section">
     <hr>
+
     <div class="project">
-      <h2>Bachelor Thesis: Rates of Convergence for Projection Estimators (B-splines)</h2>
+      <div class="project-title">Rates of convergence for projection estimators (focus on B-splines)</div>
       <div class="project-links">
         <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines" target="_blank">Repository</a>
         <a href="Project/bachelorproject.pdf" target="_blank">PDF</a>
       </div>
     </div>
 
-    <hr>
-
-    <p class="tagline">
-      Applied Mathematics · Statistics · Finance · Machine Learning · Deep Learning
-    </p>
+    <div class="footer">
+      Applied Mathematics, Statistics, Finance, Machine Learning, Deep Learning
+    </div>
   </div>
 </body>
 </html>
