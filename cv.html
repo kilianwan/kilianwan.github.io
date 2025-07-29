@@ -18,14 +18,23 @@
       background-color: #111;
       padding: 1em 2em;
       display: flex;
-      justify-content: flex-end;
-      gap: 2em;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #444;
     }
 
-    nav a {
+    .nav-left a {
+      color: #f1f1f1;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-right a {
       color: #88c9f2;
       text-decoration: none;
       font-weight: 500;
+      margin-left: 2em;
     }
 
     .cv-content {
@@ -58,20 +67,21 @@
 </head>
 <body>
   <nav>
-  <div class="nav-left">
-    <a href="index.html"><strong>Kilian</strong> Wan</a>
-  </div>
-  <div class="nav-right">
-    <a href="#about">About</a>
-    <a href="#">Research</a>
-    <a href="cv.html">CV</a>
-  </div>
-</nav>
+    <div class="nav-left">
+      <a href="index.html"><strong>Kilian</strong> Wan</a>
+    </div>
+    <div class="nav-right">
+      <a href="index.html">About</a>
+      <a href="#">Research</a>
+      <a href="cv.html">CV</a>
+    </div>
+  </nav>
 
   <div class="cv-content">
     <h1>Curriculum Vitae</h1>
-    <p> You can download the full PDF version of my CV <a href="KW_CV_2025.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    <p>You can download the full PDF version of my CV <a href="KW_CV_2025.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
     <hr style="border: 0; height: 1px; background-color: #444; margin-top: 0.5em; margin-bottom: 2em;">
+
     <h2>Education</h2>
     <p><strong>M.Sc. in Financial Engineering</strong>, EPFL (2024–present)</p>
     <ul>
@@ -100,7 +110,7 @@
     <h2>Selected Projects</h2>
     <ul>
       <li><strong>Stock Return Forecasting with Deep Learning</strong>: Combined FinBERT sentiment analysis with structured financial data in PyTorch.</li>
-      <li><strong>B-splines & Projection Estimators</strong>: Bachelor thesis on nonparametric convergence rates.</li>
+      <li><strong>B-splines & Projection Estimators</strong>: Bachelor thesis on convergence rates of projection estimators with a focus on B-splines.</li>
     </ul>
   </div>
 </body>
