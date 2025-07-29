@@ -42,14 +42,21 @@
       padding: 0 2em;
     }
 
-    .project-container h1 {
+    h1 {
       text-align: center;
       font-size: 2.5em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.2em;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      font-size: 1em;
+      margin-bottom: 2.5em;
     }
 
     .project {
-      margin-top: 2em;
+      margin-bottom: 3em;
     }
 
     hr {
@@ -61,12 +68,12 @@
 
     .project-title {
       font-size: 1.4em;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.4em;
     }
 
     .project-links {
       font-size: 0.95em;
-      margin-left: 1em;
+      margin-bottom: 0.5em;
     }
 
     .project-links a {
@@ -79,11 +86,17 @@
       text-decoration: underline;
     }
 
-    .footer {
-      text-align: center;
-      margin-top: 4em;
-      color: #aaa;
-      font-size: 0.95em;
+    .project-tags {
+      font-size: 0.9em;
+      color: #bbb;
+    }
+
+    .project-tags i {
+      margin-right: 0.3em;
+    }
+
+    .tag {
+      margin-right: 1em;
     }
   </style>
 </head>
@@ -94,14 +107,14 @@
     </div>
     <div class="nav-right">
       <a href="index.html">About</a>
-      <a href="#">Research</a>
-      <a href="cv.html">CV</a>
       <a href="project.html">Projects</a>
+      <a href="cv.html">CV</a>
     </div>
   </nav>
 
   <div class="project-container">
     <h1>Projects</h1>
+    <div class="subtitle">Applied Mathematics, Statistics, Finance, Machine Learning, Deep Learning</div>
 
     <hr>
 
@@ -111,10 +124,11 @@
         <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines" target="_blank">Repository</a>
         <a href="Project/bachelorproject.pdf" target="_blank">PDF</a>
       </div>
-    </div>
-
-    <div class="footer">
-      Applied Mathematics, Statistics, Finance, Machine Learning, Deep Learning
+      <div class="project-tags">
+        <i class="fa-regular fa-calendar"></i><span class="tag">2024</span>
+        <i class="fa-solid fa-tag"></i><span class="tag">math</span>
+        <i class="fa-solid fa-tag"></i><span class="tag">epfl</span>
+      </div>
     </div>
   </div>
 </body>
