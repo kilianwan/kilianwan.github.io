@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects – Kilian Wan</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #1e1e1e;
       color: #f1f1f1;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
     }
@@ -22,86 +23,76 @@
       align-items: center;
     }
 
-    nav .nav-left a {
-      color: #f1f1f1;
-      font-weight: bold;
+    nav .left {
+      font-weight: 600;
       font-size: 1.2em;
-      text-decoration: none;
     }
 
-    nav .nav-right {
-      display: flex;
-      gap: 2em;
-    }
-
-    nav .nav-right a {
+    nav a {
       color: #88c9f2;
       text-decoration: none;
+      margin-left: 2em;
       font-weight: 500;
     }
 
     .header {
       text-align: center;
-      margin: 3em 0 1em;
+      margin-top: 3em;
     }
 
     .header h1 {
-      font-size: 3em;
-      color: #f1f1f1;
+      font-size: 2.5em;
       font-weight: 600;
+      color: #f1f1f1;
+      letter-spacing: -0.02em;
     }
 
     .projects {
-      max-width: 900px;
-      margin: 0 auto 4em;
+      max-width: 800px;
+      margin: 2em auto 4em auto;
       padding: 0 2em;
     }
 
     .project {
-      border-bottom: 1px solid #444;
-      padding: 1.5em 0;
+      margin-bottom: 2em;
     }
 
-    .project h2 {
-      font-size: 1.5em;
+    .project-title {
+      font-size: 1.3em;
+      font-weight: 600;
+      margin-bottom: 0.3em;
+    }
+
+    .project-links {
+      font-size: 0.95em;
       color: #88c9f2;
-      margin-bottom: 0.2em;
-    }
-
-    .meta {
-      font-size: 0.9em;
-      color: #aaa;
-      margin-bottom: 0.6em;
-    }
-
-    .tags span {
-      background-color: #333;
-      color: #ccc;
-      padding: 2px 8px;
-      border-radius: 12px;
-      font-size: 0.8em;
-      margin-right: 0.5em;
     }
 
     .project-links a {
       color: #88c9f2;
-      margin-right: 1.5em;
-      font-size: 0.95em;
       text-decoration: none;
+      margin-right: 1.5em;
     }
 
     .project-links a:hover {
       text-decoration: underline;
     }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: #444;
+      margin: 2em 0;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <div class="nav-left">
-      <a href="index.html">Kilian Wan</a>
+    <div class="left">
+      <a href="index.html"><strong>Kilian</strong> Wan</a>
     </div>
-    <div class="nav-right">
-      <a href="index.html#about">About</a>
+    <div class="right">
+      <a href="index.html">About</a>
       <a href="project.html">Projects</a>
       <a href="cv.html">CV</a>
     </div>
@@ -112,15 +103,15 @@
   </div>
 
   <div class="projects">
+    <hr>
     <div class="project">
-      <h2>Bachelor Project: Rates of convergence for projection estimators (B-splines)</h2>
-      <div class="meta">June 2024 ・ 22 pages ・ <span class="tags"><span>math</span> <span>statistics</span></span></div>
+      <div class="project-title">Rates of convergence for projection estimators (with a focus on B-splines)</div>
       <div class="project-links">
-        <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines" target="_blank">Repository</a>
-        <a href="https://kilianwan.github.io/Project/bachelorproject.pdf" target="_blank">PDF</a>
+        <a href="https://github.com/kilianwan/Bachelor-Project-Rates-of-convergence-for-projection-estimators-with-a-focus-on-B-splines" target="_blank" rel="noopener noreferrer">Repository</a>
+        <a href="Project/bachelorproject.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
       </div>
     </div>
-
+    <hr>
     <!-- Add more projects below following the same structure -->
   </div>
 </body>
