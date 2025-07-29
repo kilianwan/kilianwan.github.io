@@ -31,9 +31,13 @@
 
     nav .nav-right a {
       margin-left: 2em;
-      color: #88c9f2;
+      color: white;
       text-decoration: none;
       font-weight: 500;
+    }
+
+    nav .nav-right a.active {
+      color: #88c9f2;
     }
 
     .cv-content {
@@ -70,9 +74,9 @@
       <a href="index.html"><strong>Kilian</strong> Wan</a>
     </div>
     <div class="nav-right">
-      <a href="index.html">About</a>
-      <a href="project.html">Projects</a>
-      <a href="cv.html">CV</a>
+      <a href="index.html" id="nav-about">About</a>
+      <a href="project.html" id="nav-projects">Projects</a>
+      <a href="cv.html" id="nav-cv">CV</a>
     </div>
   </nav>
 
@@ -126,5 +130,9 @@
       <li>Analyse B – Prof. Ana Khukhro</li>
     </ul>
   </div>
+
+  <script>
+    document.getElementById("nav-cv").classList.add("active");
+  </script>
 </body>
 </html>
