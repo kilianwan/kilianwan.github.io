@@ -19,19 +19,7 @@
       padding: 1em 2em;
       display: flex;
       justify-content: space-between;
-      flex-wrap:wrap;
       align-items: center;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    .cv-content {
-      max-width: 800px;
-      margin: 6em auto 3em auto;
-      padding: 0 2em;
     }
 
     nav .nav-left a {
@@ -50,6 +38,12 @@
 
     nav .nav-right a.active {
       color: #88c9f2;
+    }
+
+    .cv-content {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 0 2em;
     }
 
     h1, h2, h3 {
@@ -72,22 +66,9 @@
     a:hover {
       text-decoration: underline;
     }
-
-    #progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      background: #88c9f2;
-      z-index: 1100;
-      transition: width 0.25s ease-out;
-    }
   </style>
 </head>
 <body>
-  <div id="progress-bar"></div>
-
   <nav>
     <div class="nav-left">
       <a href="index.html"><strong>Kilian</strong> Wan</a>
@@ -101,7 +82,7 @@
 
   <div class="cv-content">
     <h1>Curriculum Vitae</h1>
-    <p>You can download the full PDF version of my CV <a href="KW_CV_2025.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+    <p> You can download the full PDF version of my CV <a href="KW_CV_2025.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
     <hr style="border: 0; height: 1px; background-color: #444; margin-top: 0.5em; margin-bottom: 2em;">
 
     <h2>Education</h2>
@@ -149,14 +130,9 @@
       <li>Analyse B – Prof. Ana Khukhro</li>
     </ul>
   </div>
+
   <script>
     document.getElementById("nav-cv").classList.add("active");
-    window.onscroll = function () {
-      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      document.getElementById("progress-bar").style.width = scrolled + "%";
-    };
   </script>
 </body>
 </html>
